@@ -58,7 +58,7 @@ export const Home = () => {
             <Post
               _id={obj._id}
               title={obj.title}
-              imageUrl={obj.imageUrl? `${process.env.API}${obj.imageUrl}`:''}
+              imageUrl={obj.imageUrl? `https://cloud-storage-server-r2ju.onrender.com${obj.imageUrl}`:''}
               user={obj.user}
               createdAt={obj.createdAt}
               viewsCount={obj.viewsCount}
