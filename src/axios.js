@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instane = axios.create({
-	baseURL: process.env.API,
+	baseURL: "https://blog-server-06mi.onrender.com"
 })
 
 instane.interceptors.request.use((config)=>{
