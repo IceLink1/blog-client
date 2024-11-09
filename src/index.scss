@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5 !important;
+}
+.HomePage{
+  display: grid;
+}
+.HomeCommentsMobile{
+  display: none;
+}
+.HomeComments{
+  max-width: 30%;
+}
+.HomePage .HomePosts{
+  width: 70%;
+}
+@media (max-width:850px){
+  .HomeComments{
+    display: none;
+  }
+  .HomePage .HomePosts{
+    width: 100%;
+  }
+  .HomeCommentsMobile{
+    display: block;
+    width: 100%;
+  }
+}
